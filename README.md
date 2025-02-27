@@ -18,7 +18,7 @@ Cis-Benchmark on AWS using Cloudformation.
 2 - A Teams webhook
 
 3 - on the variables.tf file fill the fields.
-**
+```
 variable "region" {
   default = "us-east-1"
 }
@@ -26,4 +26,14 @@ variable "region" {
 variable "webhook" {
   default = "<teams webhook>"
 }
-**
+```
+
+4 - on the sns.tf file too
+
+```
+resource "aws_sns_topic_subscription" "securityhub_alarm_subscription" {
+    topic_arn = aws_sns_topic.securityhub_alarm.arn
+    protocol  = "email"
+    endpoint  = "<e-mail>"
+}
+```
