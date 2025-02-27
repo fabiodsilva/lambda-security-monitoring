@@ -41,7 +41,14 @@ resource "aws_sns_topic_subscription" "securityhub_alarm_subscription" {
 ```
 Terraform v1.10.0
 ```
-6 - pyhtpn version
+6 - pyhton version
 ```
 Python 3.10.12
 ```
+
+
+
+
+##by DONI 
+
+
