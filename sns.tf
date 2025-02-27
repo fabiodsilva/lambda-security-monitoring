@@ -20,5 +20,5 @@ resource "aws_sns_topic_policy" "securityhub_alarm_policy" {
 resource "aws_sns_topic_subscription" "securityhub_alarm_subscription" {
     topic_arn = aws_sns_topic.securityhub_alarm.arn
     protocol  = "email"
-    endpoint  = "fabio.brito@compasso.com.br"
+    endpoint  = "<e-mail>"
 }
