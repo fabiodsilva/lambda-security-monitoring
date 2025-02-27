@@ -1,14 +1,13 @@
 # lambda-security-monitoring
-lambda who send e-mail and tems message
+lambda who send e-mail and tems message usin terraform
 
 What this Template does:
 
+     
      * Create SNS with Subscription;
      * Create a Lambda;
      * Create a eventbridge to take Security Hub Critical and High alarms.
 
-
-Cis-Benchmark on AWS using Cloudformation.
 
 
 ## Requirements
@@ -36,4 +35,13 @@ resource "aws_sns_topic_subscription" "securityhub_alarm_subscription" {
     protocol  = "email"
     endpoint  = "<e-mail>"
 }
+```
+
+5 - terraform version
+```
+Terraform v1.10.0
+```
+6 - pyhtpn version
+```
+Python 3.10.12
 ```
